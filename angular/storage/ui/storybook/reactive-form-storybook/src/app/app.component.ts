@@ -6,8 +6,9 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ReactiveFormsModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+  <router-outlet />
+  `
 })
 export class AppComponent {
   title = 'reactive-form-storybook';
