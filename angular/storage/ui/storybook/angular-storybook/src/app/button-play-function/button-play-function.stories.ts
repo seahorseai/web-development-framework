@@ -19,8 +19,10 @@ export const Button: Story = {
  
     const buttonTag = canvas.findByTitle("Button 1");
 
-    const submitButton = canvas.getByRole('button');
+    const roleButton = canvas.getByRole('button');
  
     await userEvent.click(await buttonTag);
+
+    await userEvent.click(roleButton);
   },
 };
