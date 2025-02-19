@@ -1,20 +1,18 @@
 
-
 import { ButtonParametersComponent } from './button-parameters.component';
 import type { Meta, StoryObj } from '@storybook/angular';
 
 
-const meta: Meta<ButtonParametersComponent> = {
+
+export default {
   title: 'Components/Parameters',
   component: ButtonParametersComponent,
   
-  };
+  } as  Meta<ButtonParametersComponent>;
 
-export default meta;
 
-type Story = StoryObj<ButtonParametersComponent>;
 
-export const Primary: Story = {
+export const primary: StoryObj<ButtonParametersComponent> = {
   parameters: {
     backgrounds: {
       values: [

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AlertComponent } from './alert/alert.component';
+import { ButtonArgsComponent } from "./args/button-args.component";
  
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AlertComponent],
+  imports: [RouterOutlet,  ButtonArgsComponent],
   template: `
-  <app-alert></app-alert>
+  <app-button-args></app-button-args>
     <router-outlet />
   `
 })

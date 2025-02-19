@@ -7,8 +7,8 @@ const meta: Meta<AlertComponent> = {
   argTypes: {
     message: { control: 'text' }, // Explicitly define message as a text control
   },
+  tags: ['autodocs'],
 };
-
 export default meta;
 
 type Story = StoryObj<AlertComponent>;
@@ -20,6 +20,7 @@ export const Primary: Story = {
 };
 
 export const Secondary: Story = {
+  tags: ['!autodocs'],
   args: {
     message: 'This is a warning alert!',
   },

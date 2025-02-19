@@ -5,6 +5,7 @@ setCompodocJson(docJson);
 
 const preview: Preview = {
   parameters: {
+    tags: ['autodocs'],
     controls: {
       matchers: {
         color: /(background|color)$/i,

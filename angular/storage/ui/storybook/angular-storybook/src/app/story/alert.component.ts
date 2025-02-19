@@ -15,6 +15,6 @@ import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
  
 })
 export class AlertComponent {
-  @Input() message: string = 'Default Alert Message';
+  @Input() message: string | undefined;
 
 }
