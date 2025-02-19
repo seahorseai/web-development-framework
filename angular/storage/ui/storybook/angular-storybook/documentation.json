@@ -35,14 +35,14 @@
     "components": [
         {
             "name": "AlertComponent",
-            "id": "component-AlertComponent-1278ef2a30c896a38e23ab42f1f5e27e2a19f98401fde71536965e95a5a28d0c28b229f39f09c32b4cfb82c4428acd6279fa3957dfda0312c24bf277e2e09128",
-            "file": "src/app/multistory/alert.component.ts",
+            "id": "component-AlertComponent-eaffea98101f357d467ab9157a0e05212eb65d758d504af92e1607b3b59c2cfbc56f7d77fe5374b86278d58b7e4661b9f23d2e241cd88297e5bcda8fe5b55c3a",
+            "file": "src/app/story/alert-story.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-alert",
+            "selector": "alert-story",
             "styleUrls": [],
             "styles": [],
             "template": "\n <ngb-alert [dismissible]=\"false\">\n<strong>{{ message }}</strong> Better check yourself, you're not looking too good.\n </ngb-alert>\n\n",
@@ -52,11 +52,10 @@
             "inputsClass": [
                 {
                     "name": "message",
-                    "defaultValue": "'Default Alert Message'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 18,
-                    "type": "string",
+                    "type": "string | undefined",
                     "decorators": []
                 }
             ],
@@ -77,7 +76,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';\n\n@Component({\n  selector: 'app-alert',\n  standalone: true,\n  imports: [NgbAlertModule],\n  template: `\n    \n    <ngb-alert [dismissible]=\"false\">\n\t  <strong>{{ message }}</strong> Better check yourself, you're not looking too good.\n    </ngb-alert>\n\n  `,\n \n})\nexport class AlertComponent {\n  @Input() message: string = 'Default Alert Message';\n\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';\n\n@Component({\n  selector: 'alert-story',\n  standalone: true,\n  imports: [NgbAlertModule],\n  template: `\n    \n    <ngb-alert [dismissible]=\"false\">\n\t  <strong>{{ message }}</strong> Better check yourself, you're not looking too good.\n    </ngb-alert>\n\n  `,\n \n})\nexport class AlertComponent {\n  @Input() message: string | undefined;\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -179,6 +178,41 @@
             "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-button-args',\n  standalone: true,\n  imports: [],\n  template: `\n\n  <button>Button 1</button>\n  <div>\n  <strong>{{ storybookArg }}</strong>\n</div>\n\n`\n  \n})\nexport class ButtonArgsComponent {\n\n  storybookArg: string | undefined;\n  \n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "ButtonAutodocComponent",
+            "id": "component-ButtonAutodocComponent-b25fbd3877a154614ee0624c46f9c7b3bf1e07fdff4e2021a7a7e70f083ba6254fa0e09a2bd0a35f2e773225de806aabc339643dda247708f324c7da696aeb21",
+            "file": "src/app/autodoc/button-autodoc.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "button-autodoc",
+            "styleUrls": [],
+            "styles": [],
+            "template": "\n<button> Button</button>\n\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'button-autodoc',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button> Button</button>\n  \n  `\n})\nexport class ButtonAutodocComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -355,14 +389,14 @@
         },
         {
             "name": "ButtonEventComponent",
-            "id": "component-ButtonEventComponent-2193cc5b31c703e2d5e9c8bead8691f08ff2c5bb3ab04a4d5c3c0768b1e1beac5c859d1fd73f70f6751d7e786038148354ffbcca38ffd128f807dca106629a1f",
-            "file": "src/app/play/button-event.component.ts",
+            "id": "component-ButtonEventComponent-91a37c32204a8bd1f015493a5235d163806cfba766cd7e7623f537fd5bebee6a7447378bb5e7fd4d31716b8e887279948e5efb1ae870c55f9586940443178be0",
+            "file": "src/app/play/button-play.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-button",
+            "selector": "button-play",
             "styleUrls": [],
             "styles": [],
             "template": "<button (click)=\"handleClick()\">{{ label }}</button>",
@@ -414,10 +448,70 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  standalone: true,\n  template: `<button (click)=\"handleClick()\">{{ label }}</button>`,\n  \n})\nexport class ButtonEventComponent {\n  label: string = 'Click Me';\n\n  @Output() clicked = new EventEmitter<void>();\n\n  handleClick() {\n\n    this.clicked.emit();\n  }\n\n}\n\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'button-play',\n  standalone: true,\n  template: `<button (click)=\"handleClick()\">{{ label }}</button>`,\n  \n})\nexport class ButtonEventComponent {\n  label: string = 'Click Me';\n\n  @Output() clicked = new EventEmitter<void>();\n\n  handleClick() {\n\n    this.clicked.emit();\n  }\n\n}\n\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "ButtonNamingComponent",
+            "id": "component-ButtonNamingComponent-97f581cfe739633da603286af63bb596b5c43ef2efe153606f2b6a773c9dfb5b379b1743d74dcd69e17f01aaecf74dd78b1e59e216ec1feeaa010dca1beddfc7",
+            "file": "src/app/naming/button-naming.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "button-naming",
+            "styleUrls": [],
+            "styles": [
+                "button { padding: 10px; border-radius: 5px; cursor: pointer; }\n     .primary { background: blue; color: white; }\n     .secondary { background: grey; color: white; }"
+            ],
+            "template": "\n<button [ngClass]=\"variant\">{{ label }}</button>\n\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "'Click me'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "\"primary\" | \"secondary\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "NgClass"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { NgClass } from '@angular/common';\nimport { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'button-naming',\n  standalone: true,\n  imports: [ NgClass ],\n  template: `\n\n    <button [ngClass]=\"variant\">{{ label }}</button>\n  \n  `,\n  styles: [\n\n    `button { padding: 10px; border-radius: 5px; cursor: pointer; }\n     .primary { background: blue; color: white; }\n     .secondary { background: grey; color: white; }`\n\n  ]\n})\nexport class ButtonNamingComponent {\n\n  @Input() label = 'Click me';\n  @Input() variant: 'primary' | 'secondary' = 'primary';\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "button { padding: 10px; border-radius: 5px; cursor: pointer; }\n     .primary { background: blue; color: white; }\n     .secondary { background: grey; color: white; }\n",
             "extends": []
         },
         {
@@ -456,18 +550,18 @@
             "extends": []
         },
         {
-            "name": "CardLoaderComponent",
-            "id": "component-CardLoaderComponent-7b17a38f9bfc8687963567276785d7985a5b0c41d86ab38d373a0b2e04679299c970011b271896687ef3479ada0813c8ec062b3bc35389d2b6439e7f0c647ebb",
-            "file": "src/app/loader/card-loader.component.ts",
+            "name": "ButtonTagComponent",
+            "id": "component-ButtonTagComponent-7d8afe0acf4cdb54cc99eb747c488a255e155016d5656f1feefbdce16ce1488652472afccf60add44e687e1569c9e88f84c25ed858cd40dea2c214f916d46d52",
+            "file": "src/app/tags/button-tag.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-card-loader",
+            "selector": "button-tagg",
             "styleUrls": [],
             "styles": [],
-            "template": "\n\n\n",
+            "template": "\n<button> Button</button>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -484,7 +578,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-card-loader',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  \n\n  `\n})\nexport class CardLoaderComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'button-tagg',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button> Button</button>\n  \n  `\n})\nexport class ButtonTagComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -573,6 +667,50 @@
                     "styleUrl": "./header.css"
                 }
             ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "ItemLoaderComponent",
+            "id": "component-ItemLoaderComponent-f92f70af79b2f3b5ed0545f69ab6106734cbc93be51e5c2627826e686efafca2277707e4443ebca65d824fa699470c41623290d02986e25b3f2ab21ffef90632",
+            "file": "src/app/loader/loader-item.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "item-loader",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<div *ngIf=\"todo\">\n  <h3>{{ todo.title }}</h3>\n  <p>Status: {{ todo.completed ? 'Completed' : 'Pending' }}</p>\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "todo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "literal type",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'item-loader',\n  template: `\n    <div *ngIf=\"todo\">\n      <h3>{{ todo.title }}</h3>\n      <p>Status: {{ todo.completed ? 'Completed' : 'Pending' }}</p>\n    </div>\n  `,\n})\nexport class ItemLoaderComponent {\n  @Input() todo!: { title: string; completed: boolean };\n}\n\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
             "stylesData": "",
             "extends": []
         },
@@ -815,7 +953,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 6,
+        "count": 5,
         "status": "low",
         "files": [
             {
@@ -847,6 +985,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/autodoc/button-autodoc.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonAutodocComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/decorator/button-decorator.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -856,12 +1003,12 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/loader/card-loader.component.ts",
+                "filePath": "src/app/loader/loader-item.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "CardLoaderComponent",
+                "name": "ItemLoaderComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -874,12 +1021,12 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/multistory/alert.component.ts",
+                "filePath": "src/app/naming/button-naming.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "AlertComponent",
+                "name": "ButtonNamingComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -892,12 +1039,30 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/play/button-event.component.ts",
+                "filePath": "src/app/play/button-play.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonEventComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/story/alert-story.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AlertComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/tags/button-tag.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonTagComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

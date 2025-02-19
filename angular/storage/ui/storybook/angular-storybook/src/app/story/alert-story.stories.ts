@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import { AlertComponent } from './alert.component';
+import { AlertComponent } from './alert-story.component';
 
 const meta: Meta<AlertComponent> = {
-  title: 'Components/MultiStory',
+  title: 'Components/Story',
   component: AlertComponent,
   argTypes: {
     message: { control: 'text' }, // Explicitly define message as a text control

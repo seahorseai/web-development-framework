@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-alert',
+  selector: 'alert-story',
   standalone: true,
   imports: [NgbAlertModule],
   template: `

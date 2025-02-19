@@ -2,7 +2,7 @@
  import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-button',
+  selector: 'button-play',
   standalone: true,
   template: `<button (click)="handleClick()">{{ label }}</button>`,
   

@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/angular';
 import { within, userEvent } from '@storybook/testing-library';
-import { ButtonEventComponent } from './button-event.component';
+import { ButtonEventComponent } from './button-play.component';
 
 
 
