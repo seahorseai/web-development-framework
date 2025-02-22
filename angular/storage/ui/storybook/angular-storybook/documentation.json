@@ -35,7 +35,7 @@
     "components": [
         {
             "name": "AlertComponent",
-            "id": "component-AlertComponent-eaffea98101f357d467ab9157a0e05212eb65d758d504af92e1607b3b59c2cfbc56f7d77fe5374b86278d58b7e4661b9f23d2e241cd88297e5bcda8fe5b55c3a",
+            "id": "component-AlertComponent-487b53030a2ef6484c00a92c7b4ec9e801a534bfacf5ff81c8ef9f5e6f0f108870079335ed00690142596fbe261def998fe6264b5a1992fa48d2d3e42730d43e",
             "file": "src/app/story/alert-story.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -45,7 +45,7 @@
             "selector": "alert-story",
             "styleUrls": [],
             "styles": [],
-            "template": "\n <ngb-alert [dismissible]=\"false\">\n<strong>{{ message }}</strong> Better check yourself, you're not looking too good.\n </ngb-alert>\n\n",
+            "template": "\n <ngb-alert [dismissible]=\"false\">\n<strong>{{ message }}</strong>\n </ngb-alert>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -76,7 +76,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';\n\n@Component({\n  selector: 'alert-story',\n  standalone: true,\n  imports: [NgbAlertModule],\n  template: `\n    \n    <ngb-alert [dismissible]=\"false\">\n\t  <strong>{{ message }}</strong> Better check yourself, you're not looking too good.\n    </ngb-alert>\n\n  `,\n \n})\nexport class AlertComponent {\n  @Input() message: string | undefined;\n\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';\n\n@Component({\n  selector: 'alert-story',\n  standalone: true,\n  imports: [NgbAlertModule],\n  template: `\n    \n    <ngb-alert [dismissible]=\"false\">\n\t  <strong>{{ message }}</strong> \n    </ngb-alert>\n\n  `,\n \n})\nexport class AlertComponent {\n  @Input() message: string | undefined;\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -914,6 +914,73 @@
             ],
             "stylesData": "",
             "extends": []
+        },
+        {
+            "name": "Play2Component",
+            "id": "component-Play2Component-491bbab85dd6bbd3ae90e2d5ac62c8575de8e9bf6c59d35542ec3c4be0e018c61bcb4395c91dcf6835d29ca58becc05848f87920fe5300ce7bd9cf165dbd415c",
+            "file": "src/app/play-2/play-2.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-play-2",
+            "styleUrls": [],
+            "styles": [
+                "\n    button {\n      padding: 10px 20px;\n      font-size: 16px;\n      cursor: pointer;\n    }\n  "
+            ],
+            "template": "<button (click)=\"handleClick()\">{{ label }}</button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "'Click Me'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "clicked",
+                    "defaultValue": "new EventEmitter<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n\n  selector: 'app-play-2',\n  standalone: true,\n  template: `<button (click)=\"handleClick()\">{{ label }}</button>`,\n  styles: [`\n    button {\n      padding: 10px 20px;\n      font-size: 16px;\n      cursor: pointer;\n    }\n  `]\n})\nexport class Play2Component {\n  @Input() label: string = 'Click Me';\n  @Output() clicked = new EventEmitter<void>();\n\n  handleClick() {\n    this.clicked.emit();\n  }\n}\n\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "\n    button {\n      padding: 10px 20px;\n      font-size: 16px;\n      cursor: pointer;\n    }\n  \n",
+            "extends": []
         }
     ],
     "modules": [],
@@ -953,7 +1020,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 5,
+        "count": 4,
         "status": "low",
         "files": [
             {
@@ -1036,6 +1103,15 @@
                 "name": "ButtonParametersComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/play-2/play-2.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Play2Component",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {

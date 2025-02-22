@@ -8,7 +8,7 @@ import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
   template: `
     
     <ngb-alert [dismissible]="false">
-	  <strong>{{ message }}</strong> Better check yourself, you're not looking too good.
+	  <strong>{{ message }}</strong> 
     </ngb-alert>
 
   `,

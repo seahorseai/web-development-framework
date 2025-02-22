@@ -1,33 +1,31 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { AlertComponent } from './alert-story.component';
 
-const meta: Meta<AlertComponent> = {
+export default {
   title: 'Components/Story',
   component: AlertComponent,
   argTypes: {
     message: { control: 'text' }, // Explicitly define message as a text control
   },
-  tags: ['autodocs'],
-};
-export default meta;
+} as Meta<AlertComponent>;
+ 
 
-type Story = StoryObj<AlertComponent>;
 
-export const Primary: Story = {
+export const primary: StoryObj<AlertComponent> = {
   args: {
-    message: 'This is a success alert!',
+    message: 'This is the primary story!',
   },
 };
 
-export const Secondary: Story = {
-  tags: ['!autodocs'],
+export const secondary: StoryObj<AlertComponent> = {
+ 
   args: {
-    message: 'This is a warning alert!',
+    message: 'This is the secondary story',
   },
 };
 
-export const Tertiary: Story = {
+export const tertiary: StoryObj<AlertComponent> = {
   args: {
-    message: 'This is an error alert!',
+    message: 'This is the Tertiary story',
   },
 };

@@ -32,7 +32,6 @@
     "@angular/cli": "^18.2.11",
     "@angular/compiler-cli": "^18.2.0",
     "@angular/localize": "^18.2.0",
-    "@chromatic-com/storybook": "^3.2.4",
     "@compodoc/compodoc": "^1.1.26",
     "@storybook/addon-docs": "^8.5.3",
     "@storybook/addon-essentials": "^8.5.3",
