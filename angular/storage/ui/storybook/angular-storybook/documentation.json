@@ -139,7 +139,7 @@
         },
         {
             "name": "ButtonArgsComponent",
-            "id": "component-ButtonArgsComponent-af4a620255f666e6bd7fce6e1533ae9ff86f115ec59e21f7b20d31a7847feb94367d8f13dbc747385bd9bd9a7f03078895f3f32d3048f35b669885c459ae9462",
+            "id": "component-ButtonArgsComponent-2ed78708c928fa50da23cc05c46ed7d55bbb0354ef23b0414a27b67073ed10e15319bc116646957000c844de37e269cbf2f4deba4bd2ffcd9661b2e08d8ce9c0",
             "file": "src/app/args/button-args.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -149,7 +149,7 @@
             "selector": "app-button-args",
             "styleUrls": [],
             "styles": [],
-            "template": "\n  <button>Button 1</button>\n  <div>\n  <strong>{{ storybookArg }}</strong>\n</div>\n\n",
+            "template": "\n<button\nclass=\"btn btn-outline-primary\">{{ storybookArg }}</button>\n\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -164,7 +164,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 19
+                    "line": 18
                 }
             ],
             "methodsClass": [],
@@ -177,7 +177,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-button-args',\n  standalone: true,\n  imports: [],\n  template: `\n\n  <button>Button 1</button>\n  <div>\n  <strong>{{ storybookArg }}</strong>\n</div>\n\n`\n  \n})\nexport class ButtonArgsComponent {\n\n  storybookArg: string | undefined;\n  \n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-button-args',\n  standalone: true,\n  imports: [],\n  template: `\n\n  <button\n  class=\"btn btn-outline-primary\">{{ storybookArg }}</button>\n\n\n`\n  \n})\nexport class ButtonArgsComponent {\n\n  storybookArg: string | undefined;\n  \n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -185,7 +185,7 @@
         },
         {
             "name": "ButtonAutodocComponent",
-            "id": "component-ButtonAutodocComponent-b25fbd3877a154614ee0624c46f9c7b3bf1e07fdff4e2021a7a7e70f083ba6254fa0e09a2bd0a35f2e773225de806aabc339643dda247708f324c7da696aeb21",
+            "id": "component-ButtonAutodocComponent-7c73b3c97ad1160621841bb092fbd00cc7c994a82792a2c79a66c9c4b29fd5a2d24afbff49480b88ad98b7f03fa613e00327a6aac90832485733e93939c9b503",
             "file": "src/app/autodoc/button-autodoc.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -195,7 +195,7 @@
             "selector": "button-autodoc",
             "styleUrls": [],
             "styles": [],
-            "template": "\n<button> Button</button>\n\n",
+            "template": "\n<button class=\"btn btn-primary\"> Button</button>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -212,7 +212,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'button-autodoc',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button> Button</button>\n  \n  `\n})\nexport class ButtonAutodocComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'button-autodoc',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button class=\"btn btn-primary\"> Button</button>\n  \n  `\n})\nexport class ButtonAutodocComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -354,7 +354,7 @@
         },
         {
             "name": "ButtonDecoratorComponent",
-            "id": "component-ButtonDecoratorComponent-4138fc5cb11ba97e9c57bb8882a37af7a7d312076dacc58c4ebbcaf0a6a5a487b6eb0c9d777deb2627e92a611a5327a13f83a2914e9ecdbcac5ceb749906e371",
+            "id": "component-ButtonDecoratorComponent-4f42c8ce11db81945a455bcf03ed1758e34bc5b95e24c157ef4016a42703fef7077e6f53defca61861279ee661e303b905c41a0da39add8f09d4962510dc6818",
             "file": "src/app/decorator/button-decorator.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -364,7 +364,7 @@
             "selector": "app-button-decorator",
             "styleUrls": [],
             "styles": [],
-            "template": "\n<button> Button</button>\n\n",
+            "template": "\n<button class=\"btn btn-outline-primary\">  Button</button>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -381,7 +381,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-button-decorator',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button> Button</button>\n  \n  `\n})\nexport class ButtonDecoratorComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-button-decorator',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button class=\"btn btn-outline-primary\">  Button</button>\n  \n  `\n})\nexport class ButtonDecoratorComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -389,7 +389,7 @@
         },
         {
             "name": "ButtonEventComponent",
-            "id": "component-ButtonEventComponent-91a37c32204a8bd1f015493a5235d163806cfba766cd7e7623f537fd5bebee6a7447378bb5e7fd4d31716b8e887279948e5efb1ae870c55f9586940443178be0",
+            "id": "component-ButtonEventComponent-926b1619ad7f44c0de106efcffc96b7a0096aeb8a55449715bccce78745cc6ae4392f13f80df355af8bd034e10c9ae0f92c9e499779b39983cbb87c2bf646377",
             "file": "src/app/play/button-play.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -399,7 +399,7 @@
             "selector": "button-play",
             "styleUrls": [],
             "styles": [],
-            "template": "<button (click)=\"handleClick()\">{{ label }}</button>",
+            "template": "<button class=\"btn btn-outline-primary\" (click)=\"handleClick()\">{{ label }}</button>",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -410,7 +410,7 @@
                     "defaultValue": "new EventEmitter<void>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 14,
                     "type": "EventEmitter"
                 }
             ],
@@ -424,7 +424,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 11
+                    "line": 12
                 }
             ],
             "methodsClass": [
@@ -434,7 +434,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 15,
+                    "line": 16,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -448,7 +448,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'button-play',\n  standalone: true,\n  template: `<button (click)=\"handleClick()\">{{ label }}</button>`,\n  \n})\nexport class ButtonEventComponent {\n  label: string = 'Click Me';\n\n  @Output() clicked = new EventEmitter<void>();\n\n  handleClick() {\n\n    this.clicked.emit();\n  }\n\n}\n\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'button-play',\n  standalone: true,\n  template: `<button class=\"btn btn-outline-primary\" (click)=\"handleClick()\">{{ label }}</button>`,\n  styles: []\n  \n})\nexport class ButtonEventComponent {\n  label: string = 'Click Me';\n\n  @Output() clicked = new EventEmitter<void>();\n\n  handleClick() {\n\n    this.clicked.emit();\n  }\n\n}\n\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -456,7 +456,7 @@
         },
         {
             "name": "ButtonNamingComponent",
-            "id": "component-ButtonNamingComponent-97f581cfe739633da603286af63bb596b5c43ef2efe153606f2b6a773c9dfb5b379b1743d74dcd69e17f01aaecf74dd78b1e59e216ec1feeaa010dca1beddfc7",
+            "id": "component-ButtonNamingComponent-4c1ae2a8c5c35dc8914b5df376add801a2ed43192fff1bb6deaeffdb46bfd97c3e9f293647dbad2d31a58c8ccdf3bdbdd6839a168f0bccf49b57e1041da930bd",
             "file": "src/app/naming/button-naming.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -465,10 +465,8 @@
             "providers": [],
             "selector": "button-naming",
             "styleUrls": [],
-            "styles": [
-                "button { padding: 10px; border-radius: 5px; cursor: pointer; }\n     .primary { background: blue; color: white; }\n     .secondary { background: grey; color: white; }"
-            ],
-            "template": "\n<button [ngClass]=\"variant\">{{ label }}</button>\n\n",
+            "styles": [],
+            "template": "\n<button class=\"btn btn-outline-primary\">{{ label }}</button>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -478,7 +476,7 @@
                     "defaultValue": "'Click me'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 21,
                     "type": "string",
                     "decorators": []
                 },
@@ -487,7 +485,7 @@
                     "defaultValue": "'primary'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 24,
+                    "line": 22,
                     "type": "\"primary\" | \"secondary\"",
                     "decorators": []
                 }
@@ -508,15 +506,15 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { NgClass } from '@angular/common';\nimport { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'button-naming',\n  standalone: true,\n  imports: [ NgClass ],\n  template: `\n\n    <button [ngClass]=\"variant\">{{ label }}</button>\n  \n  `,\n  styles: [\n\n    `button { padding: 10px; border-radius: 5px; cursor: pointer; }\n     .primary { background: blue; color: white; }\n     .secondary { background: grey; color: white; }`\n\n  ]\n})\nexport class ButtonNamingComponent {\n\n  @Input() label = 'Click me';\n  @Input() variant: 'primary' | 'secondary' = 'primary';\n\n}\n",
+            "sourceCode": "import { NgClass } from '@angular/common';\nimport { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'button-naming',\n  standalone: true,\n  imports: [ NgClass ],\n  template: `\n\n    <button class=\"btn btn-outline-primary\">{{ label }}</button>\n  \n  `,\n  styles: [\n\n    \n\n  ]\n})\nexport class ButtonNamingComponent {\n\n  @Input() label = 'Click me';\n  @Input() variant: 'primary' | 'secondary' = 'primary';\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
-            "stylesData": "button { padding: 10px; border-radius: 5px; cursor: pointer; }\n     .primary { background: blue; color: white; }\n     .secondary { background: grey; color: white; }\n",
+            "stylesData": "",
             "extends": []
         },
         {
             "name": "ButtonParametersComponent",
-            "id": "component-ButtonParametersComponent-b92dc7eb0103f69970e42af806507fe212d430470845c02ab2c379fb6606fbd8a98fb97a5dce327fe992d6be0809e67bf16291a548e7a97a6f2b2354775e9897",
+            "id": "component-ButtonParametersComponent-c440b959e3fe9ea23fdd79a805c4ea4cebe5b1f6aec9b4a5c797379ef08dca41fb7a77accb1814afc4c056cdd953346bcedadf379a11009effd413ddd4f31c37",
             "file": "src/app/parameters/button-parameters.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -526,7 +524,7 @@
             "selector": "app-button-parameters",
             "styleUrls": [],
             "styles": [],
-            "template": "\n<button class=\"someclass\">Button 1</button>\n\n",
+            "template": "\n<button class=\"btn btn-primary\">Button</button>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -543,7 +541,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-button-parameters',\n  standalone: true,\n  imports: [],\n  template: `\n\n    <button class=\"someclass\">Button 1</button>\n  \n  `,\n  styles: []\n})\nexport class ButtonParametersComponent {\n\n \n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-button-parameters',\n  standalone: true,\n  imports: [],\n  template: `\n\n    <button class=\"btn btn-primary\">Button</button>\n  \n  `,\n  styles: []\n})\nexport class ButtonParametersComponent {\n\n \n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -551,7 +549,7 @@
         },
         {
             "name": "ButtonTagComponent",
-            "id": "component-ButtonTagComponent-7d8afe0acf4cdb54cc99eb747c488a255e155016d5656f1feefbdce16ce1488652472afccf60add44e687e1569c9e88f84c25ed858cd40dea2c214f916d46d52",
+            "id": "component-ButtonTagComponent-3d5134de17878302f04688a3b7df62da24aa9d1d064772320c9c675f843030db8a355df68e9c098c9c3b945b62f6f15bdd8fdd2ef73dbd58ced91edaac8b3baf",
             "file": "src/app/tags/button-tag.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -561,7 +559,7 @@
             "selector": "button-tagg",
             "styleUrls": [],
             "styles": [],
-            "template": "\n<button> Button</button>\n\n",
+            "template": "\n<button class=\"btn btn-outline-primary\"> Button</button>\n\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -578,7 +576,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'button-tagg',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button> Button</button>\n  \n  `\n})\nexport class ButtonTagComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'button-tagg',\n  standalone: true,\n  imports: [],\n  template: `\n  \n  <button class=\"btn btn-outline-primary\"> Button</button>\n  \n  `\n})\nexport class ButtonTagComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -716,7 +714,7 @@
         },
         {
             "name": "LoginFormComponent",
-            "id": "component-LoginFormComponent-616ca3de9f7abe72c0a9bd15d25555d5897d5a83be612bbfdbb09225af959443f6e9f38ef51d144c8df772846b7310abd51202810e0104e9099d30c774338794",
+            "id": "component-LoginFormComponent-63f7333fb378a7104a8dc3891e396015fb8c17e16bacf891e80c0af63c4406f2ce621f9da41c9748b908f4f447749b850b3b982f335cd986d325c8f2388f4e45",
             "file": "src/app/login/login-form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -728,7 +726,7 @@
             "styles": [
                 "\n    form div {\n      margin-bottom: 12px;\n    }\n    small {\n      color: red;\n    }\n  "
             ],
-            "template": "<form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\n  <div>\n    <label for=\"email\">Email:</label>\n    <input id=\"email\" formControlName=\"email\" />\n    <div *ngIf=\"loginForm.get('email')?.invalid && loginForm.get('email')?.touched\">\n      <small>Email is required and must be valid.</small>\n    </div>\n  </div>\n\n  <div>\n    <label for=\"password\">Password:</label>\n    <input id=\"password\" type=\"password\" formControlName=\"password\" />\n    <div *ngIf=\"loginForm.get('password')?.invalid && loginForm.get('password')?.touched\">\n      <small>Password is required (min length: 6).</small>\n    </div>\n  </div>\n\n  <button type=\"submit\" [disabled]=\"loginForm.invalid\">Login</button>\n</form>\n",
+            "template": "<form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\n  <div >\n    <input class=\"form-control\" placeholder=\"email\" id=\"email\" type=\"email\" formControlName=\"email\" />\n    <div *ngIf=\"loginForm.get('email')?.invalid && loginForm.get('email')?.touched\">\n      <small>Email is required and must be valid.</small>\n    </div>\n  </div>\n\n  <div >\n\n    <input class=\"form-control\" placeholder=\"password\" id=\"password\" type=\"password\" formControlName=\"password\" />\n    <div *ngIf=\"loginForm.get('password')?.invalid && loginForm.get('password')?.touched\">\n      <small>Password is required (min length: 6).</small>\n    </div>\n  </div>\n\n  <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"loginForm.invalid\">Login</button>\n</form>\n",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -743,7 +741,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 40
+                    "line": 39
                 }
             ],
             "methodsClass": [
@@ -753,7 +751,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 44,
+                    "line": 43,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -763,7 +761,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 51,
+                    "line": 50,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -786,7 +784,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { CommonModule } from '@angular/common'; \nimport { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';\n\n@Component({\n  standalone: true,\n  imports: [ReactiveFormsModule, CommonModule ],\n  selector: 'app-login-form',\n  template: `\n    <form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\n      <div>\n        <label for=\"email\">Email:</label>\n        <input id=\"email\" formControlName=\"email\" />\n        <div *ngIf=\"loginForm.get('email')?.invalid && loginForm.get('email')?.touched\">\n          <small>Email is required and must be valid.</small>\n        </div>\n      </div>\n\n      <div>\n        <label for=\"password\">Password:</label>\n        <input id=\"password\" type=\"password\" formControlName=\"password\" />\n        <div *ngIf=\"loginForm.get('password')?.invalid && loginForm.get('password')?.touched\">\n          <small>Password is required (min length: 6).</small>\n        </div>\n      </div>\n\n      <button type=\"submit\" [disabled]=\"loginForm.invalid\">Login</button>\n    </form>\n  `,\n  styles: [`\n    form div {\n      margin-bottom: 12px;\n    }\n    small {\n      color: red;\n    }\n  `],\n})\nexport class LoginFormComponent implements OnInit {\n  loginForm!: FormGroup;\n\n  constructor(private fb: FormBuilder) {}\n\n  ngOnInit(): void {\n    this.loginForm = this.fb.group({\n      email: ['', [Validators.required, Validators.email]],\n      password: ['', [Validators.required, Validators.minLength(6)]],\n    });\n  }\n\n  onSubmit(): void {\n    if (this.loginForm.valid) {\n      console.log(this.loginForm.value);\n    }\n  }\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { CommonModule } from '@angular/common'; \nimport { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';\n\n@Component({\n  standalone: true,\n  imports: [ReactiveFormsModule, CommonModule ],\n  selector: 'app-login-form',\n  template: `\n    <form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\n      <div >\n        <input class=\"form-control\" placeholder=\"email\" id=\"email\" type=\"email\" formControlName=\"email\" />\n        <div *ngIf=\"loginForm.get('email')?.invalid && loginForm.get('email')?.touched\">\n          <small>Email is required and must be valid.</small>\n        </div>\n      </div>\n\n      <div >\n        \n        <input class=\"form-control\" placeholder=\"password\" id=\"password\" type=\"password\" formControlName=\"password\" />\n        <div *ngIf=\"loginForm.get('password')?.invalid && loginForm.get('password')?.touched\">\n          <small>Password is required (min length: 6).</small>\n        </div>\n      </div>\n\n      <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"loginForm.invalid\">Login</button>\n    </form>\n  `,\n  styles: [`\n    form div {\n      margin-bottom: 12px;\n    }\n    small {\n      color: red;\n    }\n  `],\n})\nexport class LoginFormComponent implements OnInit {\n  loginForm!: FormGroup;\n\n  constructor(private fb: FormBuilder) {}\n\n  ngOnInit(): void {\n    this.loginForm = this.fb.group({\n      email: ['', [Validators.required, Validators.email]],\n      password: ['', [Validators.required, Validators.minLength(6)]],\n    });\n  }\n\n  onSubmit(): void {\n    if (this.loginForm.valid) {\n      console.log(this.loginForm.value);\n    }\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "\n    form div {\n      margin-bottom: 12px;\n    }\n    small {\n      color: red;\n    }\n  \n",
@@ -803,7 +801,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 40,
+                "line": 39,
                 "jsdoctags": [
                     {
                         "name": "fb",
@@ -914,73 +912,6 @@
             ],
             "stylesData": "",
             "extends": []
-        },
-        {
-            "name": "Play2Component",
-            "id": "component-Play2Component-491bbab85dd6bbd3ae90e2d5ac62c8575de8e9bf6c59d35542ec3c4be0e018c61bcb4395c91dcf6835d29ca58becc05848f87920fe5300ce7bd9cf165dbd415c",
-            "file": "src/app/play-2/play-2.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-play-2",
-            "styleUrls": [],
-            "styles": [
-                "\n    button {\n      padding: 10px 20px;\n      font-size: 16px;\n      cursor: pointer;\n    }\n  "
-            ],
-            "template": "<button (click)=\"handleClick()\">{{ label }}</button>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [
-                {
-                    "name": "label",
-                    "defaultValue": "'Click Me'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 19,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "clicked",
-                    "defaultValue": "new EventEmitter<void>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "handleClick",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 22,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": true,
-            "imports": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n\n  selector: 'app-play-2',\n  standalone: true,\n  template: `<button (click)=\"handleClick()\">{{ label }}</button>`,\n  styles: [`\n    button {\n      padding: 10px 20px;\n      font-size: 16px;\n      cursor: pointer;\n    }\n  `]\n})\nexport class Play2Component {\n  @Input() label: string = 'Click Me';\n  @Output() clicked = new EventEmitter<void>();\n\n  handleClick() {\n    this.clicked.emit();\n  }\n}\n\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": "\n    button {\n      padding: 10px 20px;\n      font-size: 16px;\n      cursor: pointer;\n    }\n  \n",
-            "extends": []
         }
     ],
     "modules": [],
@@ -1020,7 +951,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 5,
         "status": "low",
         "files": [
             {
@@ -1103,15 +1034,6 @@
                 "name": "ButtonParametersComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/play-2/play-2.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "Play2Component",
-                "coveragePercent": 0,
-                "coverageCount": "0/4",
                 "status": "low"
             },
             {

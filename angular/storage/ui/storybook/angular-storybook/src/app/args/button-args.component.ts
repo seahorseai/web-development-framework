@@ -6,10 +6,9 @@ import { Component, Input } from '@angular/core';
   imports: [],
   template: `
 
-  <button>Button 1</button>
-  <div>
-  <strong>{{ storybookArg }}</strong>
-</div>
+  <button
+  class="btn btn-outline-primary">{{ storybookArg }}</button>
+
 
 `
   

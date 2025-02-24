@@ -4,14 +4,8 @@
 @Component({
   selector: 'button-play',
   standalone: true,
-  template: `<button (click)="handleClick()">{{ label }}</button>`,
-  styles: [`
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  `]
+  template: `<button class="btn btn-outline-primary" (click)="handleClick()">{{ label }}</button>`,
+  styles: []
   
 })
 export class ButtonEventComponent {

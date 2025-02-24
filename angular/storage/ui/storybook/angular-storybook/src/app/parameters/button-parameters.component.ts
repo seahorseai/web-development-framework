@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
 
-    <button class="someclass">Button 1</button>
+    <button class="btn btn-primary">Button</button>
   
   `,
   styles: []

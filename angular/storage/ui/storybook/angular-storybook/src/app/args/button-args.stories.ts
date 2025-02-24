@@ -15,6 +15,6 @@ export default {
 
 export const primary: StoryObj<ButtonArgsComponent> = {
   args: {
-    storybookArg: "pepe"
+    storybookArg: "Button"
   },
 };

@@ -32,7 +32,7 @@ export const primary: StoryObj<ItemLoaderComponent> = {
   }),
   loaders: [
     async () => ({
-      todo: await (await fetch('https://jsonplaceholder.typicode.com/todos/6')).json(),
+      todo: await (await fetch('https://jsonplaceholder.typicode.com/todos/1')).json(),
     }),
   ],
 };
